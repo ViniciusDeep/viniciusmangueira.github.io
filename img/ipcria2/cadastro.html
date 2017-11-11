@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastre-se - IpCria</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Empresa especializada em Soluções Digitais">
+	<meta name="keywords" content="Cadastre-se, Tecnologia, Soluções Digitais">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="IpCria">
+	<link rel="stylesheet" href="css/cadastro.css">
+	<link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="img/ipcria.png">
+</head>
+<body>
+
+		<header  class="container bg-branco">
+		<h1 class="logo"><a href="#">
+				
+			</a></h1>
+			<i class="btn-menu fa fa-arrow-circle-left color-branco2" aria-hidden="true"></i>
+
+		
+	</header> 
+
+	<div class="tam container ">
+  
+		<div class="ret bg-marrom color-branco">
+          <span class="btn-cadastra">Cadastro</span> | <span class="btn-entrar">Entrar</span>
+          </div>
+         <form action="cadastrar.php" class="form-cadastra" method="post">
+         <div class="box">
+        	
+          	<input name="nome" class="dois" type="text" placeholder="Nome " required>
+          	<input name="sobrenome" class="dois" type="text" placeholder="Sobrenome" required>
+          	<input name="datanasc" type="text" onfocus="(this.type='date')" placeholder="Data de Nascimento" required>
+          	<input name="email" type="email" placeholder="Email">
+          	<input type="email" placeholder="Confirmar Email">
+			      <input name="senha" type="password" placeholder="Senha">
+            <p><a href="#">Ao clicar em Inscreva-se, você concorda com nossos termos e que leu nossa Política de Dados, incluindo nosso Uso de Cookies</a></p>
+
+        </div>
+        
+        <button id="btn2" class="btn bg-marrom color-branco2 radius" type="submit">Inscrever-se</button>
+        </form>
+
+        <form action="logar.php" class="form-entrar" method="post">
+         <div class="box">
+            
+            <input name="emaillogin" type="email" placeholder="Email">
+            <input name="senhalogin" type="password" placeholder="Senha">
+            <p class="termos"><a href="#">Esqueceu a conta?</a></p>
+        </div>
+        
+        <button id="btn2" class="btn bg-marrom color-branco2 radius" type="submit">Entrar</button>
+        </form>
+       
+        
+    </div>
+
+	<footer class="rodape container bg-marrom color-branco2">
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-google"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        
+        <p class="copyright">
+          Copyright &copy IpCria 2017. Todos os direitos reservados.
+        </p>
+      </footer>
+  
+
+  <script src="lib/jquery/jquery-3.1.1.min.js"></script>
+  <script>
+    $(".btn-entrar").click(function(){
+          $(".form-entrar").show([1000]);
+          $(".form-cadastra").hide();
+
+      });
+    
+      $(".btn-cadastra").click(function(){
+          $(".form-cadastra").show([1000]);
+          $(".form-entrar").hide();
+      });
+  </script>
+	
+</body>
+</html>

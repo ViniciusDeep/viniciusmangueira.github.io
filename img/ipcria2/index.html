@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>IP CRIA - Especializada em Soluções Digitais</title>
+      <meta name="description" content="Agência especializada em Marketing Digital, Criação de Aplicativos Mobile.">
+      <meta name="keywords" content="Agência digital, Marketing, Sites">
+      <meta name="robots" content="index,follow">
+      <meta name="author" content="Mateus de Oliveira">
+      <link rel="stylesheet" href="css/estilo.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="icon" href="img/icon.png">
+   </head>
+    
+   <body>
+   <!-- Cabecalho -->
+      <header class=" cabecalho container">
+         <a href="index.html"><h1 class="logo">IP CRIA - Especializada em Soluções Digitais</h1></a>
+         <button class="btn-menu bg-gradient"><i class="fa fa-bars fa-lg"></i></button>
+         <nav class="menu">
+            <a class="btn-close"><i class="fa fa-times"></i></a>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="#">Cliente</a></li>
+               <li><a href="#">Serviços</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">Quem Somos</a></li>
+               <li><a href="#">Contato</a></li>
+               <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+         </nav>
+      </header>
+      <!--Fim do Cabecalho -->
+
+      <!-- Banner -->
+      <div class="banner container">
+        <div class="title">
+          <h2>OUSE INOVAR</h2>
+          <h3>Criamos experiências e estabelecemos ações estratégicas que conectam marcas e consumidores</h3>
+        </div>
+      </div>
+      <!-- Fim do Banner -->
+
+      <!-- Serviços -->
+      <main class="servicos container">
+        <article class="servico bg-white radius">
+          <a href="#"><img src="img/criacoes.jpg" alt="Campanhas publicitárias"><img></a>
+          <div class="inner">
+            <a href="#">Campanhas Publicitárias</a>
+            <h4>Impressos, VTs e Jingles</h4>
+            <p>Se você está precisando de criação de algum material em específico, conte com a nossa equipe de profissionais. Eles farão toda campanha publicitária. VT, outdoor, folder, anúncio e muito mais pela sua empresa no mais alto padrão de qualidade.</p>
+          </div>
+        </article>
+        <article class="servico bg-white radius">
+          <a href="#">
+            <img src="img/md.jpg" alt="Marketing Digital">
+          </a>
+          <div class="inner">
+            <a href="#">Marketing Digital</a>
+            <h4>Administração de Redes Sociais</h4>
+            <p>Como agência de publicidade aplicamos estratégias nos meios digitais para que a seu negócio seja visto por milhões de usuários. O Brasil é o 5° país mais conectado do mundo. Por este motivo, o seu negócio não pode ficar fora do mercado digital.</p>
+          </div>
+        </article>
+        <article class="servico bg-white radius">
+          <a href="#">
+            <img src="img/cs.jpg" alt="Criação de Sites">
+          </a>
+          <div class="inner">
+            <a href="#">Criação de Sites</a>
+            <h4>Sites Administráveis</h4>
+            <p>Agora você pode administrar seu site quando e como quiser. E melhor ainda pois você pode pagar por este serviço, pois desenvolvemos de forma. Seu site atualizado, com seus últimos produtos, integração com redes socias, agora é possível.</p>
+          </div>
+        </article>
+      </main>
+      <!-- Fim do Serviço -->
+      
+      <!-- Newsletter -->
+      <section class="newsletter container bg-black">
+        <h2>Inscreva-se agora!</h2>
+        <h3>Receba novidades, dicas e muito mais</h3>
+        <form action="news.php" method="post">
+          <input class="bg-black radius" type="email" name="email" placeholder="Seu email">
+          <button class="bg-white radius" type="submit">Cadastrar</button>
+        </form>
+      </section>
+
+      <!-- Fim do Newsletter -->
+      
+      <!--RODAPÉ-->
+      <footer class="rodape container bg-gradient">
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-google"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-envelope"></i></a>
+        </div>
+        <p class="copyright">
+          Copyright &copy IP CRIA 2017. Todos os direitos reservados.
+        </p>
+      </footer>
+
+      <!-- Script_Jquery_Menu -->
+      <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+  <script>
+    $(".btn-menu").click(function(){
+      $(".menu").show();
+    });
+    
+    $(".btn-close").click(function(){
+      $(".menu").hide();
+    });
+  </script>
+  <!-- Fim do Script_Jquery_Menu -->
+   </body>
+</html>
