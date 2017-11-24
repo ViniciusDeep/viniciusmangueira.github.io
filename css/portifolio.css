@@ -17,6 +17,7 @@ body, html {
 Size e configuration to header
  */
 .intro-header {
+  height: 95%;
   padding-top: 50px;
   padding-bottom: 100px;
   text-align: center;
